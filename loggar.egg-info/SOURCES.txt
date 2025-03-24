@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+loggar/__init__.py
+loggar/loggar.py
+loggar.egg-info/PKG-INFO
+loggar.egg-info/SOURCES.txt
+loggar.egg-info/dependency_links.txt
+loggar.egg-info/entry_points.txt
+loggar.egg-info/requires.txt
+loggar.egg-info/top_level.txt
