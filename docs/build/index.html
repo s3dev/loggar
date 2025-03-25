@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Log Archive Project Documentation &mdash; loggar - v0.1.0 Documentation</title>
+  <title>Log Archive Project Documentation &mdash; loggar - v0.1.1 Documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -15,7 +15,7 @@
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=2caa9db7"></script>
+      <script src="_static/documentation_options.js?v=48654df3"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
       <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -122,7 +122,7 @@ the target virtual environment:</p>
 </pre></div>
 </div>
 <p>This will install <em>both</em> the library and the command line utility, but
-we'll just be using the command line utility.</p>
+we’ll just be using the command line utility.</p>
 <p>After installation, check the utility was installed and is accessible
 using:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">loggar</span> <span class="o">--</span><span class="n">help</span>
@@ -135,7 +135,7 @@ using:</p>
 <h3>Database setup<a class="headerlink" href="#database-setup" title="Link to this heading"></a></h3>
 <p>First, the MySQL or MariaDB database and tables must be created. The
 creation scripts are provided for you in the <code class="docutils literal notranslate"><span class="pre">meta/database/setup</span></code>
-directory, if you'd like to run the setup yourself. Alternatively, the
+directory, if you’d like to run the setup yourself. Alternatively, the
 following command can be called to setup the database for you:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">loggar</span> <span class="o">--</span><span class="n">setup</span>
 </pre></div>
@@ -144,13 +144,13 @@ following command can be called to setup the database for you:</p>
 <p class="admonition-title">Important</p>
 <p>The database engine must already be installed and at least one user
 created.</p>
-<p>Additionally, the user's credentials must be added to the
+<p>Additionally, the user’s credentials must be added to the
 <code class="docutils literal notranslate"><span class="pre">config.toml</span></code> file - refer to the <a class="reference internal" href="#config-file-setup"><span class="std std-ref">Config file setup</span></a> section.</p>
 </div>
 </section>
 <section id="config-file-setup">
 <span id="id1"></span><h3>Config file setup<a class="headerlink" href="#config-file-setup" title="Link to this heading"></a></h3>
-<p>Once the database is setup, you're ready to update the config file. To
+<p>Once the database is setup, you’re ready to update the config file. To
 do this, simply navigate to the <code class="docutils literal notranslate"><span class="pre">loggar/libs/config.toml</span></code> file and
 populate the database credentials to the <code class="docutils literal notranslate"><span class="pre">[database]</span></code> table.</p>
 <p>Next, populate the network hosts which should be swept to the
@@ -186,7 +186,7 @@ virtual environment.</p>
 the appropriate arguments for the relevant log files.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Remember to include the path to the target virtual environment's
+<p>Remember to include the path to the target virtual environment’s
 Python executable in the cron command.</p>
 </div>
 </section>
@@ -214,7 +214,7 @@ to <a class="reference internal" href="contact.html#contact-us"><span class="std
 <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
 </ul>
 <p class="rubric">Footnotes</p>
-<p>Last updated: 24 Mar 2025</p>
+<p>Last updated: 25 Mar 2025</p>
 </section>
 </section>
 
@@ -228,7 +228,7 @@ to <a class="reference internal" href="contact.html#contact-us"><span class="std
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2025 | s3dev | version 0.1.0.</p>
+    <p>&#169; Copyright 2025 | s3dev | version 0.1.1.</p>
   </div>
 
    

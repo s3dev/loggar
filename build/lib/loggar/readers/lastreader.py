@@ -54,11 +54,13 @@ class LastReader(_BaseReader):
         """
         # pylint: disable=attribute-defined-outside-init  # It's in the parent class.
         ssh = []
-        if self._host.lower() not in ('localhost', self._ME):
+        shell = True  # Must be True when not using SSH.
+        if self._host.lower() not in ('localhost', self._ME) or self._ip != '127.0.0.1':
             ssh = ['ssh', '-t', f'{self._USER}@{self._ip}', '-p', self._port]
+            shell = False
         cmd = ssh + self._CMD
         logger.debug('Executing command: %s', ' '.join(cmd))
-        with sp.Popen(cmd, stderr=sp.PIPE, stdout=sp.PIPE) as proc:
+        with sp.Popen(cmd, stderr=sp.PIPE, stdout=sp.PIPE, shell=shell) as proc:
             stdout, stderr = proc.communicate()
             if stderr and not stdout:
                 logging.error('Error occurred while reading log: %s', stderr.decode().strip())

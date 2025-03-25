@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: loggar
-Version: 0.1.0
+Version: 0.1.1
 Summary: A utility for archiving Linux log files.
 Author-email: The Developers <development@s3dev.uk>
 License-Expression: MIT
